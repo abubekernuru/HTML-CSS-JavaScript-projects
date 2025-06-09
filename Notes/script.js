@@ -1,10 +1,10 @@
 const adder = document.getElementById("add");
-const editBtn = document.querySelector(".edit");
-const deleteBtn = document.querySelector(".delete");
-const textarea = document.querySelector("textarea");
-const displayer = document.querySelector(".display");
 
 adder.addEventListener("click", ()=>{
+    notesApp();
+})
+
+function notesApp(){
     const noteApp = document.createElement('main');
     noteApp.classList.add('note');
     noteApp.innerHTML = `
@@ -14,8 +14,33 @@ adder.addEventListener("click", ()=>{
             <button class="delete"><i class="fa-solid fa-trash"></i></button>
         </div>
         <textarea class="textarea" id="textarea"></textarea>
-        <div class="display" id="display">Display</div>
+        <div class="display" id="display"></div>
     </section>
     `
-    document.body.appendChild(noteApp);
-})
+    const editBtn = noteApp.querySelector(".edit");
+    const deleteBtn = noteApp.querySelector(".delete");
+    const textarea = noteApp.querySelector("textarea");
+    const displayer = noteApp.querySelector(".display");
+
+    const text = textarea.value;
+    displayer.innerHTML = marked(text);
+
+    textarea.addEventListener("click", (e)=>{
+        const { value } = e.target;
+        displayer.innerHTML = marked(value);
+    })
+    
+    editBtn.addEventListener("click", () => {
+        textarea.classList.toggle("hidden");
+        // displayer.classList.toggle("hidden");
+    })
+
+    deleteBtn.addEventListener("click", ()=>{
+        noteApp.remove();
+    })
+        document.body.appendChild(noteApp);
+    
+
+
+}
+notesApp();
