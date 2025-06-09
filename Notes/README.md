@@ -1,4 +1,4 @@
-````markdown name=Notes/README.md
+
 # Notes App
 
 This folder contains the source code for the Notes App.
@@ -8,6 +8,4 @@ This folder contains the source code for the Notes App.
 The app has been deployed on Vercel.  
 You can access it here: [notes-appank.vercel.app](https://notes-appank.vercel.app)
 
----
 Feel free to explore, contribute, or provide feedback!
-````
