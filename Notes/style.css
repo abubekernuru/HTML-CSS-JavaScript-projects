@@ -2,11 +2,16 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     background-color: #7bdaf3;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
 }
 
 .add {
@@ -22,5 +27,49 @@ body {
     top: 1rem;
     right: 1rem;
 }
+.note {
+    margin: 10px 20px;
+}
+.notes {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.1);
+}
 
+.tools {
+    background-color: #9ec862;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 8px;
+}
 
+.tools button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+textarea {
+    width: 100%;
+    height: calc(100% - 37px);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    word-spacing: normal;
+    /* display: none; */
+}
+.display {
+    border: 1px solid yellow;
+    width: 100%;
+    height: calc(100% - 37px);
+    display: none;
+    /* overflow: hidden; */
+}
+.hidden {
+    display: none;
+}
