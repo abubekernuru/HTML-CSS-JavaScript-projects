@@ -13,7 +13,7 @@ function notesApp(){
             <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
             <button class="delete"><i class="fa-solid fa-trash"></i></button>
         </div>
-        <textarea class="textarea" id="textarea"></textarea>
+        <textarea class="textarea hidden" id="textarea"></textarea>
         <div class="display" id="display"></div>
     </section>
     `
@@ -25,14 +25,17 @@ function notesApp(){
     const text = textarea.value;
     displayer.innerHTML = marked(text);
 
-    textarea.addEventListener("click", (e)=>{
+    textarea.addEventListener("input", (e)=>{
         const { value } = e.target;
         displayer.innerHTML = marked(value);
     })
     
     editBtn.addEventListener("click", () => {
+        if (textarea.classList.contains("hidden")) {
+            textarea.value = displayer.textContent;
+        }
         textarea.classList.toggle("hidden");
-        // displayer.classList.toggle("hidden");
+        displayer.classList.toggle("hidden");
     })
 
     deleteBtn.addEventListener("click", ()=>{
