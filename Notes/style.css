@@ -61,6 +61,7 @@ textarea {
     padding: 15px;
 }
 .display {
+    font-family: inherit;
     color: #333;
     height: 400px;
     width: 100%;
