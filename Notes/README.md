@@ -1,4 +1,3 @@
-
 # Notes App
 
 This folder contains the source code for the Notes App.
