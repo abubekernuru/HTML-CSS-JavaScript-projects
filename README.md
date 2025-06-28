@@ -5,7 +5,7 @@ This folder contains the source code for the Notes App.
 ## Deployment
 
 The app has been deployed on Vercel.  
-You can access it here : [notes-appank.vercel.app](https://notes-appank.vercel.app)
+You can access it here : [notes-appank.vercel.app](https://notesapp-mu-vert.vercel.app/)
 
 
 # Countdown Timer
@@ -20,4 +20,5 @@ This is a simple countdown timer that counts down to the New Year. It uses HTML,
 - It has only one function in JavaScript.
 
 ## Link to the live demo
-https://new-cear-countdown.vercel.app/
+The app has been deployed on Vercel.  
+You can access it here : [new-year-countdown-timer](https://new-cear-countdown.vercel.app/)
