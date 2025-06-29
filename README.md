@@ -9,6 +9,7 @@ You can access it here : [notes-appank.vercel.app](https://notesapp-mu-vert.verc
 
 
 # Countdown Timer
+
 ### Done by Abubeker Nuru on 21-10-2017Ec.
 This is a simple countdown timer that counts down to the New Year. It uses HTML, CSS, and JavaScript to create a visually appealing and functional countdown timer.
 
@@ -22,3 +23,12 @@ This is a simple countdown timer that counts down to the New Year. It uses HTML,
 ## Link to the live demo
 The app has been deployed on Vercel.  
 You can access it here : [new-year-countdown-timer](https://new-cear-countdown.vercel.app/)
+
+
+# Automated Search Bar 
+
+- This is a very simple search bar and mostly used css and less javascript.
+- It only has one event listener function.
+- It mainly teaches me how to use transition in different properties of css.
+
+### Done by Abubeker Nuru on Sunday, 22-10-2017Ec.
