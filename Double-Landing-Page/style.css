@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.split {
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 100px;
+    letter-spacing: 4px;
+    color: aliceblue;
+    backdrop-filter: brightness(0.2);
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: solid 4px;
+    transition: background-color .7s;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: black;
+    border: solid 4px;
+}
+
+.split.left {
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    background-image: url("https://www.iphon.fr/app/uploads/2024/09/iphone-16-pro-2.jpg");
+    background-size: cover;
+}
+.split.right {
+    background-color: lightblue;
+    position: absolute;
+    right: 0;
+    background-image: url("https://m.media-amazon.com/images/I/71Chc90uK3L._AC_SL1500_.jpg");
+    background-size: cover;
+}
+
+.active-left .left {
+    width: 75%;
+}
+.active-left .right {
+    width: 25%;
+}
+.active-right .right {
+    width: 75%;
+}
+.active-right .left {
+    width: 25%;
+}
+
+.left, .right {
+    transition: width 2s ease-in-out;
+}
