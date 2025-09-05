@@ -26,6 +26,7 @@ Welcome! I'm Abubeker Nuru, a passionate web developer. Here you'll find a showc
 8. [🖥️ Double Landing Page](#double-landing-page)
 9. [✅ To Do List](#to-do-list)
 10. [🔢 Step Progress Bar](#step-progress-bar)
+11. [🕒 Digital Clock](#digital-clock)
 
 ---
 
@@ -157,6 +158,17 @@ A simple step progress bar that displays the progress of a task in a visually ap
 ### Done by Abubeker Nuru on 2-11-2017Ec. (November 11, 2025)
 
 ---
+# 🕒 Digital Clock
+
+A simple digital clock that displays the current time in hours, minutes, and seconds. It uses HTML, CSS, and JavaScript to create a responsive and interactive clock.
+
+**Features:**
+- Displays the current time in a digital format.
+- Updates the time every second.
+- Uses CSS for styling and layout.
+- Simple JavaScript to handle time updates.
+
+### Done by Abubeker Nuru on 30-12-2017Ec. (September 5, 2025)
 
 <div align="center">
 
