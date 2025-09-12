@@ -27,6 +27,7 @@ Welcome! I'm Abubeker Nuru, a passionate web developer. Here you'll find a showc
 9. [✅ To Do List](#to-do-list)
 10. [🔢 Step Progress Bar](#step-progress-bar)
 11. [🕒 Digital Clock](#digital-clock)
+12. [✖️ Multiplication App](#multiplication-app)
 
 ---
 
@@ -169,6 +170,16 @@ A simple digital clock that displays the current time in hours, minutes, and sec
 - Simple JavaScript to handle time updates.
 
 ### Done by Abubeker Nuru on 30-12-2017Ec. (September 5, 2025)
+
+# ✖️ Multiplication App
+A simple multiplication app that allows users to multiply two numbers and get the result. It uses HTML, CSS, and JavaScript to create a user-friendly interface.
+
+**Features:**
+- A question to multiply two random numbers.
+- An input field to enter the answer.
+
+### Done by Abubeker Nuru on 2-01-2018Ec. (September 12, 2025)
+
 
 <div align="center">
 
