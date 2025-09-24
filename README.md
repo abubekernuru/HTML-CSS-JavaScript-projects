@@ -29,6 +29,7 @@ Welcome! I'm Abubeker Nuru, a passionate web developer. Here you'll find a showc
 11. [🕒 Digital Clock](#digital-clock)
 12. [✖️ Multiplication App](#multiplication-app)
 13. [Button Ripple Effect](#button-ripple-effect)
+14. [Real-time Character Counter](#real-time-character-counter)
 
 ---
 
@@ -189,6 +190,14 @@ Built with html,css and js
 -
 
 ### Done by Abubeker Nuru on 5-01-2018Ec. (September 15, 2025)
+
+# Real-time Character Counter
+Built with html,css and js
+
+**Features:**
+-
+
+### Done by Abubeker Nuru on 14-01-2018Ec. (September 24, 2025)
 
 
 <div align="center">
