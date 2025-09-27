@@ -30,6 +30,7 @@ Welcome! I'm Abubeker Nuru, a passionate web developer. Here you'll find a showc
 12. [✖️ Multiplication App](#multiplication-app)
 13. [Button Ripple Effect](#button-ripple-effect)
 14. [Real-time Character Counter](#real-time-character-counter)
+15. [Sticky Navbar](#sticky-navbar)
 
 ---
 
@@ -198,6 +199,15 @@ Built with html,css and js
 -
 
 ### Done by Abubeker Nuru on 14-01-2018Ec. (September 24, 2025)
+
+# Sticky Navbar
+Built with html,css and js
+
+**Features:**
+-created my own logo 
+-used windows scroll event listner to handle change the background of the navbar at certain points
+
+### Done by Abubeker Nuru on 17-01-2018Ec. (September 27, 2025)
 
 
 <div align="center">
