@@ -31,6 +31,7 @@ Welcome! I'm Abubeker Nuru, a passionate web developer. Here you'll find a showc
 13. [Button Ripple Effect](#button-ripple-effect)
 14. [Real-time Character Counter](#real-time-character-counter)
 15. [Sticky Navbar](#sticky-navbar)
+16. [Random Color Generator](#random-color-generator)
 
 ---
 
@@ -208,6 +209,15 @@ Built with html,css and js
 -used windows scroll event listner to handle change the background of the navbar at certain points
 
 ### Done by Abubeker Nuru on 17-01-2018Ec. (September 27, 2025)
+
+# Random Color Generator  
+Built with html,css and js
+
+**Features:**
+- Generates a random color in hexadecimal format.
+- Displays the generated color code.
+
+### Done by Abubeker Nuru on 24-01-2018Ec. (october 4, 2025)
 
 
 <div align="center">
