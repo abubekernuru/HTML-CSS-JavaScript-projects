@@ -54,7 +54,8 @@ Rate items using fun emojis! Interactive and visually appealing, made with HTML,
 - Stylish CSS layout
 - Simple JavaScript for interactions
 
----
+**Live Demo:**  
+[emoji-rating-app](https://emoji-rating-black.vercel.app/)
 
 # 📊 Profile Statistics
 
@@ -64,6 +65,9 @@ A profile stats app displaying user achievements and experience in a modern, res
 - Shows years of experience, websites, and apps made
 - Responsive CSS
 - Interactive JavaScript
+
+**Live Demo:**  
+[profile-statistics](https://profile-statistics-flax.vercel.app/)
 
 ---
 
@@ -76,7 +80,8 @@ A rotating gallery to showcase images in a dynamic, automatic slideshow.
 - CSS transitions
 - JavaScript for image control
 
----
+**Live Demo:**  
+[rotating-image-gallery](https://rotating-image-gallery-six.vercel.app/)
 
 # ⏳ Countdown Timer
 
@@ -91,7 +96,7 @@ A simple countdown timer that counts down to the New Year. It uses HTML, CSS, an
 - It has only one function in JavaScript.
 
 **Live Demo:**  
-[new-year-countdown-timer](https://new-cear-countdown.vercel.app/)
+[new-year-countdown-timer](https://new-year-countdown-gamma.vercel.app/)
 
 ---
 
@@ -102,6 +107,9 @@ A minimal search bar with smooth CSS transitions and a single JavaScript event l
 - This is a very simple search bar and mostly used css and less javascript.
 - It only has one event listener function.
 - It mainly teaches me how to use transition in different properties of css.
+
+**Live Demo:** 
+[automated-search-bar](https://automated-search-bar-git-main-abubeker-nurus-projects.vercel.app/)
 
 ### Done by Abubeker Nuru on Sunday, 22-10-2017Ec. (November 1, 2025)
 
@@ -117,6 +125,7 @@ A list of social media platforms with icons, using CSS transitions and JavaScrip
 - It's simple and easy to understand.
 - It teaches me how to use transitions, transform-rotate in css.
 - In javaScript how to toggle, add and remove classes.
+
 
 ### Done by Abubeker Nuru on 24-10-2017Ec. (November 3, 2025)
 
@@ -189,8 +198,8 @@ A simple multiplication app that allows users to multiply two numbers and get th
 # Button Ripple Effect
 Built with html,css and js
 
-**Features:**
--
+**Live Demo:**
+[Button Ripple Effect](https://button-ripple-effect-ivory.vercel.app/)
 
 ### Done by Abubeker Nuru on 5-01-2018Ec. (September 15, 2025)
 
@@ -226,6 +235,8 @@ Built with html,css and js
 **Features:**
 - Creates a heart shape using CSS.
 - Animates the heart shape to create a trail effect.
+
+**Live Demo:** [Heart Trail Animation](https://heart-trail-animation-sooty.vercel.app/)
 
 ### Done by Abubeker Nuru on 26-01-2018Ec. (october 6, 2025)
 
