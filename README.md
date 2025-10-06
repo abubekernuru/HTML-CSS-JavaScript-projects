@@ -28,10 +28,11 @@ Welcome! I'm Abubeker Nuru, a passionate web developer. Here you'll find a showc
 10. [🔢 Step Progress Bar](#step-progress-bar)
 11. [🕒 Digital Clock](#digital-clock)
 12. [✖️ Multiplication App](#multiplication-app)
-13. [Button Ripple Effect](#button-ripple-effect)
-14. [Real-time Character Counter](#real-time-character-counter)
-15. [Sticky Navbar](#sticky-navbar)
-16. [Random Color Generator](#random-color-generator)
+13. [🦋 Button Ripple Effect](#button-ripple-effect)
+14. [📝 Real-time Character Counter](#real-time-character-counter)
+15. [📌 Sticky Navbar](#sticky-navbar)
+16. [🎨 Random Color Generator](#random-color-generator)
+17. [💖 Heart Trail Animation](#heart-trail-animation)
 
 ---
 
@@ -218,6 +219,15 @@ Built with html,css and js
 - Displays the generated color code.
 
 ### Done by Abubeker Nuru on 24-01-2018Ec. (october 4, 2025)
+
+# Heart Trail Animation  
+Built with html,css and js
+
+**Features:**
+- Creates a heart shape using CSS.
+- Animates the heart shape to create a trail effect.
+
+### Done by Abubeker Nuru on 26-01-2018Ec. (october 6, 2025)
 
 
 <div align="center">
