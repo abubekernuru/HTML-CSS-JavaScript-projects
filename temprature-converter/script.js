@@ -12,16 +12,16 @@ function computeTemp(e) {
     const currentUnit = e.target.name;
     switch (currentUnit) {
         case "celsius":
-            fahrenheitEl.value = ((currentValue * 1.8) + 32);
-            kelvinEl.value = currentValue + 273.15;
+            fahrenheitEl.value = ((currentValue * 1.8) + 32).toFixed(2);
+            kelvinEl.value = (currentValue + 273.15).toFixed(2);
             break;
         case "fahrenheit":
-            celsiusEl.value = (currentValue - 32) / 1.8;
-            kelvinEl.value = ((currentValue - 32) / 1.8) + 273.15;
+            celsiusEl.value = ((currentValue - 32) / 1.8).toFixed(2);
+            kelvinEl.value = (((currentValue - 32) / 1.8) + 273.15).toFixed(2);
             break;
         case "kelvin":
-            fahrenheitEl.value = ((currentValue -273.15)  * 1.8) + 32;
-            celsiusEl.value = currentValue - 273.15;
+            fahrenheitEl.value = ((currentValue -273.15)  * 1.8 + 32).toFixed(2);
+            celsiusEl.value = (currentValue - 273.15).toFixed(2);
             break;
     
         default:
