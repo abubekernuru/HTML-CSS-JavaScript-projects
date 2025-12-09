@@ -9,7 +9,7 @@ function notesApp(){
     noteApp.classList.add('note');
     noteApp.innerHTML = `
     <section class="notes">
-        <div class="tools">
+        <div class="tools"> 
             <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
             <button class="delete"><i class="fa-solid fa-trash"></i></button>
         </div>
