@@ -1,49 +1,69 @@
-const adder = document.getElementById("add");
+const BtnEl = document.getElementById("add");
+BtnEl.addEventListener('click', addNote)
 
-adder.addEventListener("click", ()=>{
-    notesApp();
-})
+const notes = getNote();
+notes.forEach(note => {
+  createNoteEl(note.id, note.content);
+});
 
-function notesApp(){
-    const noteApp = document.createElement('main');
-    noteApp.classList.add('note');
-    noteApp.innerHTML = `
-    <section class="notes">
-        <div class="tools"> 
-            <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
-            <button class="delete"><i class="fa-solid fa-trash"></i></button>
-        </div>
-        <textarea class="textarea hidden" id="textarea"></textarea>
-        <div class="display" id="display"></div>
-    </section>
-    `
-    const editBtn = noteApp.querySelector(".edit");
-    const deleteBtn = noteApp.querySelector(".delete");
-    const textarea = noteApp.querySelector("textarea");
-    const displayer = noteApp.querySelector(".display");
-
-    const text = textarea.value;
-    displayer.innerHTML = marked(text);
-
-    textarea.addEventListener("input", (e)=>{
-        const { value } = e.target;
-        displayer.innerHTML = marked(value);
-    })
-    
-    editBtn.addEventListener("click", () => {
-        if (textarea.classList.contains("hidden")) {
-            textarea.value = displayer.textContent;
-        }
-        textarea.classList.toggle("hidden");
-        displayer.classList.toggle("hidden");
-    })
-
-    deleteBtn.addEventListener("click", ()=>{
-        noteApp.remove();
-    })
-        document.body.appendChild(noteApp);
-    
-
-
+function addNote(){
+  const notes = getNote();
+  const noteObj = {
+    id: Math.floor(Math.random() * 10000),
+    content: ''
+  }
+  createNoteEl(noteObj.id, noteObj.content);
+  notes.push(noteObj);
+  saveNote(notes)
 }
-notesApp();
+
+
+function createNoteEl(id, content) {
+  const noteCont = document.createElement('main'); 
+  const element = document.createElement('textarea');
+  element.classList.add('textarea');
+  element.setAttribute("placeholder","Type your note here...");
+  element.value = content;
+  element.dataset.id = id;
+
+  element.addEventListener('dblclick', ()=>{deleteNote(id, element)});
+  element.addEventListener('input', ()=>{updateNote(id, element.value)});
+  
+  noteCont.appendChild(element)
+  document.body.appendChild(noteCont);
+
+  return element;
+}
+
+function deleteNote(id, element){
+  const isConfirm = confirm("Do you want to delete the note?");
+  const notes = getNote();
+  if(isConfirm){
+    element.remove();
+    const updatedNote = notes.filter(note=> note.id !== id);
+    saveNote(updatedNote)
+  }
+}
+
+function updateNote(id, content){
+  const notes = getNote();
+  const noteIndex = notes.findIndex(note=> note.id === id);
+  if(noteIndex !== -1 ){
+    notes[noteIndex].content = content;
+    saveNote(notes);
+  }
+}
+
+function saveNote(note){
+  localStorage.setItem('notes', JSON.stringify(note))
+}
+
+function getNote(){
+  const notes = JSON.parse(localStorage.getItem('notes'));
+  return notes || [];
+}
+
+
+
+
+
