@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left bottom, lightyellow, lightcyan);
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.textarea {
+    width: 300px;
+    height: 200px;
+    resize: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    font-size: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer ;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
