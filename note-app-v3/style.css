@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to left bottom, lightyellow, lightcyan);
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
     min-height: 100vh;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -21,6 +21,7 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    padding: 1rem;
 }
 
 .textarea {
@@ -31,9 +32,13 @@ h1 {
     font-size: 16px;
     outline: none;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.textarea:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -45,8 +50,15 @@ h1 {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    cursor: pointer ;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 255, 255, 0.8);
+    color: #666;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
 }
