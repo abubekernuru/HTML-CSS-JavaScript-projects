@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Currency Converter</h1>
+        <section class="currency-container">
+            <select name="currency-first" id="currency-first" class="currency-first" title="Select a currency">
+                <option value="AED">AED</option>
+                <option value="ETB">ETB</option>
+                <option value="USD" selected>USD</option>
+                <option value="SAR">SAR</option>
+                <option value="KES">KES</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <input type="number" min="1" value="1" title="Enter the amount" class="worth-first" id="worth-first">
+        </section>
+        <section class="currency-container">
+            <select name="currency-second" id="currency-second" class="currency-second" title="Select a currency">
+                <option value="AED">AED</option>
+                <option value="ETB" selected>ETB</option>
+                <option value="USD">USD</option>
+                <option value="SAR">SAR</option>
+                <option value="KES">KES</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <input type="number" disabled title="conversion" class="worth-second" id="worth-second" >
+        </section>
+        <p class="exchange-rate" id="exchange-rate">1 USD ~ 154.69 ETB</p>
+    </main>
+</body>
+</html>
