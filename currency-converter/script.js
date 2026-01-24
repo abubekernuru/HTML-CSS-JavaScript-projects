@@ -16,6 +16,6 @@ async function updateCurrency(){
     const data = await res.json();
     // console.log(data)
     let rates = data.conversion_rates[secondCurrencyEl.value]
-    secondValueEl.value = (rates * firstValueEl.value)
+    secondValueEl.value = (rates * firstValueEl.value).toFixed(2)
     exchangerateEl.innerText = `1 ${firstCurrencyEl.value} ~ ${data.conversion_rates[secondCurrencyEl.value]} ${secondCurrencyEl.value}`
 }
