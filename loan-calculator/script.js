@@ -1,9 +1,15 @@
+const loanAmount = document.getElementById("loan-amount");
+const interestAmount = document.getElementById("interest-rate");
+const paymentMonths = document.getElementById("months-to-pay");
 
-loanCalculator()
+[loanAmount, interestAmount, paymentMonths].forEach(input => {
+    input.addEventListener("input", loanCalculator)
+});
+
 function loanCalculator(){
-    const loanAmountValue = document.getElementById("loan-amount").value;
-    const interestAmountValue = document.getElementById("interest-rate").value;
-    const paymentMonthsValue = document.getElementById("months-to-pay").value;
+    const loanAmountValue = Number(loanAmount.value);
+    const interestAmountValue = Number(interestAmount.value);
+    const paymentMonthsValue = Number(paymentMonths.value);
     const monthlyInterest = ((interestAmountValue / 100) / 12);
     // console.log(monthlyInterest)
 
@@ -15,4 +21,4 @@ function loanCalculator(){
     const paymentEl = document.getElementById("monthly-payment");
     paymentEl.innerHTML = `Monthly Payment: ${monthlyPayment.toFixed(2)}`
 }
-
+loanCalculator()
