@@ -40,10 +40,10 @@ input#cityInput {
 
 }
 
-input:disabled{
+input#btn{
     /* width: 40px; */
     padding: 10px;
-    max-width: 80px;
+    /* max-width: 80px; */
     background-color:#114c8f;
     color: white;
     border: none;
@@ -52,8 +52,20 @@ input:disabled{
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-input:disabled:hover {
+input:disabled {
+    background-color: gray;
+
+}
+
+input#btn:hover {
     opacity: 95%;
+}
+
+.city-name {
+    margin: 0;
+    padding: 0;
+    font-size: 16px!important;
+    color: #114c8f;
 }
 
 .weather-info {
