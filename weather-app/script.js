@@ -8,7 +8,8 @@ const weatherIcon = weatherInfo.querySelector('img');
 const weatherTem = document.getElementById('temp');
 const weatherType = document.getElementById('weather-type');
 const cityName = document.getElementById("city-name");
-const detailsContEl = document.getElementById("details")
+// const detailsContEl = document.getElementById("details")
+
 
 const formEl = document.getElementById("form");
 formEl.addEventListener('submit', (e)=>{
@@ -22,25 +23,24 @@ formEl.addEventListener('submit', (e)=>{
 });
 
 const submitEl = document.getElementById("btn");
-// inputEl.addEventListener('input', () => {
-//     submitEl.disabled = inputEl.value.trim().length === 0;
-// });
 
-// fetchWeatherData()
 async function fetchWeatherData() {
     let city = inputEl.value.trim();
     try {
         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`);
 
         const data = await res.json();
-        console.log(data)
+        // console.log(data)
         if(!res.ok){
             throw new Error(data.message);
         }
         inputEl.value = "";
         const iconCode = data.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-        weatherIcon.src = iconUrl;
+        const imgEl = document.createElement('img');
+        // img.alt("weather")
+        weatherInfo.prepend(imgEl)
+        imgEl.src= iconUrl;
 
         weatherTem.innerText = `${Math.round(data.main.temp)}°C`;
         cityName.innerText = `${data.name}`;
@@ -51,16 +51,21 @@ async function fetchWeatherData() {
             {label: "Wind speed", value: `${Math.round(data.wind.speed)}m/s`}
         ]
 
-        const detailsEls = detailsContEl.querySelectorAll('div');
-        detailsEls.forEach((div, index)=>{
-            const item = detailsText[index];
-            div.innerHTML = `${item.label}: ${item.value}`;
-        })
+        const detailsContEl = document.createElement('section');
+        detailsContEl.classList.add('details');
+        detailsContEl.id = "details";
+            detailsText.forEach(item => {
+                const div = document.createElement('div');
+                div.innerHTML = `${item.label}: ${item.value}`;
+                detailsContEl.appendChild(div);
+            })
+        const containerEl = document.getElementById("container");
+        containerEl.appendChild(detailsContEl);
 
 
     } catch (error) {
         console.log(error)
-        cityName.innerText = error;
+        cityName.innerText = "City not found";
     }
 }
 
