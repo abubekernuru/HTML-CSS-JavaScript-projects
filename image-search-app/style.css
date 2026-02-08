@@ -55,6 +55,11 @@ img {
 
 }
 
+img:hover {
+    scale: 105%;
+    transition: all 0.4s;
+}
+
 .image-results {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
