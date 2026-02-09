@@ -123,3 +123,7 @@ input#btn:hover {
     border-radius: 5px;
     color: darkolivegreen;
 }
+
+.hidden {
+    visibility: hidden;
+}

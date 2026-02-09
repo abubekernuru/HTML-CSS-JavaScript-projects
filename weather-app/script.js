@@ -8,21 +8,17 @@ const weatherIcon = weatherInfo.querySelector('img');
 const weatherTem = document.getElementById('temp');
 const weatherType = document.getElementById('weather-type');
 const cityName = document.getElementById("city-name");
-// const detailsContEl = document.getElementById("details")
-
+const detailsContEl = document.getElementById('details');
 
 const formEl = document.getElementById("form");
 formEl.addEventListener('submit', (e)=>{
     e.preventDefault()
     if(inputEl.value.trim().length === 0){
         alert("Please Enter the city name!")
-        submitEl.disabled = true;
     } else {
         fetchWeatherData()
     }
 });
-
-const submitEl = document.getElementById("btn");
 
 async function fetchWeatherData() {
     let city = inputEl.value.trim();
@@ -35,12 +31,15 @@ async function fetchWeatherData() {
             throw new Error(data.message);
         }
         inputEl.value = "";
+        detailsContEl.innerHTML= ""
         const iconCode = data.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-        const imgEl = document.createElement('img');
-        // img.alt("weather")
-        weatherInfo.prepend(imgEl)
-        imgEl.src= iconUrl;
+        const imgEl = document.getElementById('weather-img');
+        console.log(imgEl)
+        if(iconCode){
+            imgEl.classList.remove('hidden')
+            imgEl.src= iconUrl;
+        }
 
         weatherTem.innerText = `${Math.round(data.main.temp)}°C`;
         cityName.innerText = `${data.name}`;
@@ -50,22 +49,16 @@ async function fetchWeatherData() {
             {label: "Humidity", value: `${Math.round(data.main.humidity)}%`},
             {label: "Wind speed", value: `${Math.round(data.wind.speed)}m/s`}
         ]
-
-        const detailsContEl = document.createElement('section');
-        detailsContEl.classList.add('details');
-        detailsContEl.id = "details";
             detailsText.forEach(item => {
                 const div = document.createElement('div');
                 div.innerHTML = `${item.label}: ${item.value}`;
                 detailsContEl.appendChild(div);
             })
-        const containerEl = document.getElementById("container");
-        containerEl.appendChild(detailsContEl);
-
+            inputEl.value = "";
 
     } catch (error) {
         console.log(error)
-        cityName.innerText = "City not found";
+        cityName.innerText = error ||  "City not found";
     }
 }
 
