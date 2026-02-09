@@ -58,7 +58,7 @@ async function fetchWeatherData() {
 
     } catch (error) {
         console.log(error)
-        cityName.innerText = error ||  "City not found";
+        cityName.innerText="City not found";
     }
 }
 
