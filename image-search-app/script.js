@@ -16,6 +16,7 @@ async function searchImage(e){
         const query = inputEl.value;
         const res = await fetch(`https://api.unsplash.com/search/photos?query=${query}&client_id=${access_key}`);
         const data = await res.json();
+        console.log(data);
         (data.results).forEach((result)=>{
             const imageHtml =`
                 <div class="img-container">
