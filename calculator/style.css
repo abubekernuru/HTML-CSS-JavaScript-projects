@@ -43,7 +43,8 @@ button {
     font-size: 18px;
     cursor: pointer;
     transition: all 0.3 ease;
-    color: #333;
+    color: #333
+    ;
 }
 
 button:hover {
@@ -62,9 +63,9 @@ button:hover {
     background-color: lightgreen;
     grid-row: span 3;
 }
-
-
-
+.delete {
+    background-color: #888;
+}
 
 label {
     position: absolute;
