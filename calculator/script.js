@@ -1,4 +1,5 @@
 const buttonsEl = document.querySelectorAll('button');
+const displayEl = document.getElementById('result');
 
 
 buttonsEl.forEach(button => {
@@ -6,27 +7,32 @@ buttonsEl.forEach(button => {
         if(button.textContent === 'C'){
             clearDisplay()
         } else if(button.textContent === '='){
-            claculate()
-        } else if(button.textContent === '❌'){
+            try {
+                calculate()
+            } catch (error) {
+                displayEl.value = "Error"
+            }
+        } else if(button.textContent.trim() === '←'){
             backDisplay()
         } else{
-            appendValue()
+            appendValue(button.textContent)
         }
     })
 });
 
 function clearDisplay(){
-
+    displayEl.value = ''
 }
 
-function claculate(){
+function calculate(){
+    const result = eval(displayEl.value)
+    displayEl.value = result.toString()
+}
 
+function appendValue(content){
+    displayEl.value += content.toString()
 }
 
 function backDisplay(){
-
-}
-
-function appendValue(){
-    
+    displayEl.value = displayEl.value.slice(0, -1)
 }

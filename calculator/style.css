@@ -64,7 +64,8 @@ button:hover {
     grid-row: span 3;
 }
 .delete {
-    background-color: #888;
+    color: white;
+    background-color: rgba(253, 76, 76, 0.999);
 }
 
 label {
