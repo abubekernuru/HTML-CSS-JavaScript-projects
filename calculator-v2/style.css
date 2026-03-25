@@ -64,6 +64,10 @@ main {
     background-color: #ff3b30;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
 
 
 
