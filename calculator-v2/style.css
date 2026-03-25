@@ -8,34 +8,61 @@ body {
 }
 
 main {
-    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 300px;
+    max-width: 90%;
 }
 
 .btns {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    
+    gap: 5px;
+    padding: 10px;
+    background-color: #333;
 }
 
 .input {
-    padding: 15px;
+    padding: 10px;
     font-size: 18px;
     color: #333;
+
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1) inset;
+    background-color: #f0f0f0;
+    height: 50px;
 }
 
-/* .btn {
+.btn {
     padding: 5px;
-    background-color: inherit;
-    color: white;
+    background-color: #555;
+    color: #fff;
     border: none;
-    box-shadow: rgba(255, 255, 255, 0.6)
-} */
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.operator {
+    background-color: #ff9500;
+}
 
 .equal {
-    column-span: ;
+    background-color: #4cd964;
+    grid-row: span 3;
 }
 
+.cancel {
+    background-color: #ff3b30;
+}
+.back {
+    background-color: #ff3b30;
+}
 
 
 
